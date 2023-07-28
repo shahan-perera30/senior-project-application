@@ -1,7 +1,7 @@
 menu {
     width: 100px;
     height: 100%;
-    background: #566573; 
+    background: #686868; 
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -46,15 +46,36 @@ menu ul li a:before {
     left: -10px;
     width: 0px;
     height: 20px;
-    background: #b1147d;
+    background: #a5181e;
     border-radius: 50%;
 }
 
 menu ul li:hover a {
-    color: #b1147d;
+    color: #a5181e;
 }
 
 menu ul li:hover a::before {
     width: 20px;
     transition: all 0.3s;
+}
+
+menu ul li.active a {
+    color:#a5181e;
+}
+
+menu ul li.active a::before {
+    width: 20px;
+    transition: all 0.3s;
+}
+
+.bottomMenu {
+    margin-top: auto;
+}
+
+@media only screen and (max-width : 525px){
+    menu{
+        min-width: 68px;
+        width: 68px;
+        
+    }
 }
