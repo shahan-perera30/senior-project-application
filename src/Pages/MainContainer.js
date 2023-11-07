@@ -1,5 +1,5 @@
 import React from "react";
-import "./MainContainer.css";
+import "./Container.css";
 import Banner from "../assets/images/1.jpg";
 
 function MainContainer() {
