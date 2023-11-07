@@ -166,7 +166,7 @@
     }
 
     .topContainer .inputBox input:focus {
-        width: 320px;
+        width: 150px;
         transition: width 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39 );
     }
 }

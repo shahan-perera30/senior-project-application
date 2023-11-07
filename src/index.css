@@ -35,3 +35,14 @@ code {
     margin-right: 10px;
     cursor: pointer;
 }
+
+.button2 {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border: 2px solid red;
+  border-radius: 0.5em;
+  padding: 5px 15px;
+  margin: 0px 5px;
+}

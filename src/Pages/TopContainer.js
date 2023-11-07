@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { FaBell, FaChevronDown } from "react-icons/fa";
-import Cover from "../img/Cover.png";
+import Cover from "../assets/images/Cover.png";
+import "./MainContainer.css";
 
 function TopContainer() {
   useEffect(() => {
