@@ -8,14 +8,17 @@
 
 .container{
     padding-top: 100px;
+    top: 10%;
+    left: 30%;
 }
 
 .timer-container{
-    background-color:#fff;
+    background-color: #a5181e;
     width: 20vw;
     padding: 1rem 6rem;
     border-radius: 1rem;
     box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+    align-items: right;
 }
 
 .stop,.restart{

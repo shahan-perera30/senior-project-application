@@ -42,7 +42,7 @@ export default function Menu() {
           </Link>
         </li>
         <li>
-          <Link to="/userProfile">
+          <Link to="/profile">
             <FaHouseUser />
           </Link>
         </li>

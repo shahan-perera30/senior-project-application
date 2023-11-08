@@ -16,11 +16,11 @@ function App() {
         <TopContainer />
         <Menu />
         <Routes>
-          <Route exact path="/" component={Home} />
-          <Route path="/dashboard" component={Dashboard} />
-          <Route path="/profile" component={Profile} />
-          <Route path="/filter" component={Filter} />
-          <Route path="/clockIn" component={ClockIn} />
+          <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/filter" element={<Filter />} />
+          <Route path="/clockIn" element={<ClockIn />} />
         </Routes>
       </div>
     </>

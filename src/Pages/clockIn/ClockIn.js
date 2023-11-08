@@ -19,20 +19,30 @@ function ClockIn() {
     return () => clearInterval(timer);
   });
 
+  const restart = () => {
+    setSeconds(0);
+    setMinutes(0);
+  };
+
+  const stop = () => {
+    clearInterval(timer);
+  };
+
   return (
-    <div>
-      className="Timer"
-      <div>
-        className="container"
-        <div>
-          className="timer-container
+    <div className="Timer">
+      <div className="container">
+        <div className="timer-container">
           <h1>Timer</h1>
           <h1>
             {minutes < 10 ? "0" + minutes : minutes}:
             {seconds < 10 ? "0" + seconds : seconds}
           </h1>
-          <button className="Restart">Restart</button>
-          <button className="Stop">Stop</button>
+          <button className="Restart" onClick={restart}>
+            Restart
+          </button>
+          <button className="Stop" onClick={stop}>
+            Stop
+          </button>
         </div>
       </div>
     </div>
