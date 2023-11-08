@@ -1,68 +1,69 @@
-.mainContainer {
+.dashBoard{
     width: 100%;
     height: calc(100% - 45px);
     padding-top: 15px;
     top: 10%;
     left: 20%;
+    background: #3e3e3e;
 }
 
-.mainContainer .left {
+.dashBoard .left {
     width: calc(100% - 30%);
     overflow-y: scroll;
     transition: all 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39 );
 }
 
-.mainContainer .left ::-webkit-scrollbar {
+.dashBoard .left ::-webkit-scrollbar {
     display:none;
 }
 
-.mainContainer .left .banner {
+.dashBoard .left .banner {
     height: 260px;
     border-radius: 0.5em;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
 }
 
-.mainContainer .left .banner .textContainer {
+.dashBoard .left .banner .textContainer {
     right: 20px;
 }
 
-.mainContainer .left .banner .textContainer h1 {
+.dashBoard .left .banner .textContainer h1 {
     font-size: 3.5em;
-    color: white;
+    color: grey;
     font-weight: 700;
     margin: 5px 0;
 }
 
-.mainContainer .left .banner .textContainer h2 {
+.dashBoard .left .banner .textContainer h2 {
     font-size: 2.5em;
     color: red;
     margin: 5px 0;
 }
 
-.mainContainer .left .banner .textContainer p {
+.dashBoard .left .banner .textContainer p {
     color: white;
     font-size: 18px;
     margin: 5px 0;
 }
 
-.mainContainer .left .banner .textContainer .clock {
+.dashBoard .left .banner .textContainer .clock {
     display: flex;
     align-items: center;
     margin: 5px 0;
 }
 
-.mainContainer .left .banner .textContainer .clock p {
+.dashBoard .left .banner .textContainer .clock p {
     margin-left: 10px;
 }
 
-.mainContainer .left .banner .textContainer .clock p span {
+.dashBoard .left .banner .textContainer .clock p span {
     display: block;
     color: red;
     font-weight: 600;
 }
 
 /* Cards */
-.mainContainer .left .cards {
+.dashBoard .left .cards {
     background: grey;
     padding: 10px;
     margin-top: 20px; 
@@ -70,19 +71,19 @@
     box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
 }
 
-.mainContainer .left .cards .filters {
+.dashBoard .left .cards .filters {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px 30px;
 }
 
-.mainContainer .left .cards .filters .recent {
+.dashBoard .left .cards .filters .recent {
     display: flex;
     align-items: center;
 }
 
-.mainContainer .left .cards .filters .recent h2 {
+.dashBoard .left .cards .filters .recent h2 {
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -90,6 +91,6 @@
     
 }
 
-.mainContainer .right {
+.dashBoard .right {
     width: calc(100% - 30%);
 }

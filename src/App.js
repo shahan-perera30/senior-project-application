@@ -1,33 +1,29 @@
 import React, { useState } from "react";
-import { Route, Navigate } from "react-router-dom";
 import "./App.css";
+import { Route, Routes } from "react-router-dom";
 import Menu from "./Pages/Menu";
 import TopContainer from "./Pages/TopContainer";
-import { BrowserRouter, Routes } from "react-router-dom";
-
-// import pages
-import { Dashboard, Profile, Filter, Logout } from "./Pages";
-//import components
-
-//import components
-/*import ProtectedRoutes from "./setup/utils-frontend/ProtectedRoutes";*/
+import Home from "./Pages/home/Home";
+import Dashboard from "./Pages/dashboard/Dashboard";
+import Profile from "./Pages/profile/Profile";
+import Filter from "./Pages/filter/Filter";
+import ClockIn from "./Pages/clockIn/ClockIn";
 
 function App() {
   return (
-    /*<Auth0Provider>*/
-    <div className="App">
-      <Menu />
+    <>
       <TopContainer />
-      <BrowserRouter>
+      <Menu />
+      <div className="App">
         <Routes>
-          {/*These routes require Token for access*/}
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/filter" element={<Filter />} />
+          <Route exact path="/" component={Home} />
+          <Route path="/dashboard/" component={Dashboard} />
+          <Route path="/profile/" component={Profile} />
+          <Route path="/filter/" component={Filter} />
+          <Route path="/clockIn/" component={ClockIn} />
         </Routes>
-      </BrowserRouter>
-    </div>
-    /* </Auth0Provider>*/
+      </div>
+    </>
   );
 }
 

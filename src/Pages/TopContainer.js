@@ -2,9 +2,8 @@ import React, { useEffect } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { FaBell, FaChevronDown } from "react-icons/fa";
 import Cover from "../assets/images/Cover.png";
-import "./MainContainer.css";
 
-function TopContainer() {
+export function TopContainer() {
   useEffect(() => {
     const menuTarget = document.getElementById("menuChevron");
     const menuContainer = document.getElementById("menuContainer");
@@ -45,9 +44,6 @@ function TopContainer() {
 
         <div className="menuContainer" id="menuContainer">
           <ul>
-            <li>Profile Settings</li>
-            <li>Data Settings</li>
-            <li>Data History</li>
             <li>Logout</li>
           </ul>
         </div>
