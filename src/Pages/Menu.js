@@ -32,44 +32,31 @@ export default function Menu() {
 
       <ul id="mainMenu">
         <li>
-          <CustomLink to="./dashboard/">
+          <Link to="./dashboard">
             <FaDelicious />
-          </CustomLink>
+          </Link>
         </li>
         <li>
-          <CustomLink to="./filter/">
+          <Link to="./filter">
             <FaFilter />
-          </CustomLink>
+          </Link>
         </li>
         <li>
-          <CustomLink to="/userProfile/">
+          <Link to="/userProfile">
             <FaHouseUser />
-          </CustomLink>
+          </Link>
         </li>
         <li>
-          <CustomLink to="/clockIn/">
+          <Link to="/clockIn">
             <FaRegClock />
-          </CustomLink>
+          </Link>
         </li>
         <li>
-          <CustomLink to="/logout/">
+          <Link to="/logout">
             <FaSignOutAlt />
-          </CustomLink>
+          </Link>
         </li>
       </ul>
     </menu>
   );
-
-  function CustomLink({ to, children, ...props }) {
-    const resolvedPath = useResolvedPath(to);
-    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-
-    return (
-      <li className={isActive ? "active" : ""}>
-        <Link to={to} {...props}>
-          {children}
-        </Link>
-      </li>
-    );
-  }
 }

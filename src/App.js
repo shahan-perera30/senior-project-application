@@ -12,15 +12,15 @@ import ClockIn from "./Pages/clockIn/ClockIn";
 function App() {
   return (
     <>
-      <TopContainer />
-      <Menu />
       <div className="App">
+        <TopContainer />
+        <Menu />
         <Routes>
           <Route exact path="/" component={Home} />
-          <Route path="/dashboard/" component={Dashboard} />
-          <Route path="/profile/" component={Profile} />
-          <Route path="/filter/" component={Filter} />
-          <Route path="/clockIn/" component={ClockIn} />
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/filter" component={Filter} />
+          <Route path="/clockIn" component={ClockIn} />
         </Routes>
       </div>
     </>
