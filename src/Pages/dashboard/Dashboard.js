@@ -12,8 +12,7 @@ function Dashboard() {
           style={{
             background: `url(${Banner})`,
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
+            backgroundPosition: "top",
           }}
         >
           <div className="textContainer">

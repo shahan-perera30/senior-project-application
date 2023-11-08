@@ -18,7 +18,8 @@
 }
 
 .dashBoard .left .banner {
-    height: 260px;
+    height: 100px;
+    width: 50px;
     border-radius: 0.5em;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
 }
