@@ -2,8 +2,7 @@
     width: 100%;
     height: calc(100% - 45px);
     padding-top: 15px;
-    top: 10%;
-    left: 20%;
+    display: flex;
     background: #3e3e3e;
 }
 
