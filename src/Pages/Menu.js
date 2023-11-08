@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Logo from "../assets/images/Logo.png";
 import "./Menu.css";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   FaDelicious,
   FaFilter,
