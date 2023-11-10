@@ -27,36 +27,38 @@ export default function Menu() {
   }, []);
 
   return (
-    <menu>
-      <img src={Logo} alt="" />
+    <aside>
+      <menu>
+        <img src={Logo} alt="" />
 
-      <ul id="mainMenu">
-        <li>
-          <Link to="./dashboard">
-            <FaDelicious />
-          </Link>
-        </li>
-        <li>
-          <Link to="./filter">
-            <FaFilter />
-          </Link>
-        </li>
-        <li>
-          <Link to="/profile">
-            <FaHouseUser />
-          </Link>
-        </li>
-        <li>
-          <Link to="/clockIn">
-            <FaRegClock />
-          </Link>
-        </li>
-        <li>
-          <Link to="/logout">
-            <FaSignOutAlt />
-          </Link>
-        </li>
-      </ul>
-    </menu>
+        <ul id="mainMenu">
+          <li>
+            <Link to="./dashboard">
+              <FaDelicious />
+            </Link>
+          </li>
+          <li>
+            <Link to="./filter">
+              <FaFilter />
+            </Link>
+          </li>
+          <li>
+            <Link to="/profile">
+              <FaHouseUser />
+            </Link>
+          </li>
+          <li>
+            <Link to="/clockIn">
+              <FaRegClock />
+            </Link>
+          </li>
+          <li>
+            <Link to="/logout">
+              <FaSignOutAlt />
+            </Link>
+          </li>
+        </ul>
+      </menu>
+    </aside>
   );
 }

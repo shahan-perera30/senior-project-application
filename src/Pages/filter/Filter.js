@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./filter.css";
 import { csv } from "d3";
 
 function Filter() {

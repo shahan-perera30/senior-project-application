@@ -1,0 +1,39 @@
+.Filter {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+   }
+   
+   .fileUploadContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+   }
+   
+   #fileUpload {
+    display: none;
+   }
+   
+   label[for="fileUpload"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+   }
+   
+   button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 20px;
+   }
+   
+   button:hover {
+    background-color: #0056b3;
+   }
+   
