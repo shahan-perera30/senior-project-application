@@ -17,14 +17,15 @@
 }
 
 .dashBoard .left .banner {
-    height: 100px;
-    width: 50px;
+    height: 260px;
     border-radius: 0.5em;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
 }
 
 .dashBoard .left .banner .textContainer {
+    position: aboslute;
     right: 20px;
+    bottom: 20px;
 }
 
 .dashBoard .left .banner .textContainer h1 {
@@ -46,51 +47,6 @@
     margin: 5px 0;
 }
 
-.dashBoard .left .banner .textContainer .clock {
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
-}
-
 .dashBoard .left .banner .textContainer .clock p {
     margin-left: 10px;
-}
-
-.dashBoard .left .banner .textContainer .clock p span {
-    display: block;
-    color: red;
-    font-weight: 600;
-}
-
-/* Cards */
-.dashBoard .left .cards {
-    background: grey;
-    padding: 10px;
-    margin-top: 20px; 
-    border-radius: 0.5em;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
-}
-
-.dashBoard .left .cards .filters {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 30px;
-}
-
-.dashBoard .left .cards .filters .recent {
-    display: flex;
-    align-items: center;
-}
-
-.dashBoard .left .cards .filters .recent h2 {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    margin-right: 10px;
-    
-}
-
-.dashBoard .right {
-    width: calc(100% - 30%);
 }
