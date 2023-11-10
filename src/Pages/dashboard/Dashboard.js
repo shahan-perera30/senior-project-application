@@ -11,7 +11,7 @@ function Dashboard() {
           className="banner"
           style={{
             background: `url(${Banner})`,
-            backgroundRepeat: "no-repeat",
+            /* backgroundRepeat: "no-repeat", */
             backgroundPosition: "top",
           }}
         >

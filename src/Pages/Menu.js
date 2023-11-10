@@ -10,9 +10,6 @@ import {
   FaSignOutAlt,
 } from "react-icons/fa";
 export default function Menu() {
-  /* import { useAuth0 } from "@auth0/auth0-react"; */
-
-  /* const { loginWithRedirect, logout, user, isLoading } = useAuth0(); */
   useEffect(() => {
     const mainMenuLi = document
       .getElementById("mainMenu")
