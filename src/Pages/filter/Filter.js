@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./filter.css";
+import csv from "csv-parser";
 
 function Filter() {
   const [file, setFile] = useState();
@@ -31,13 +32,35 @@ function Filter() {
     e.preventDefault();
 
     if (file) {
-      fileReader.onload = function (event) {
-        const text = event.target.result;
-        csvFileToArray(text);
-      };
-
-      fileReader.readAsText(file);
+      //fileReader.onload = function (event) {
+      var text = e.target.result;
+      parseCSVFile(file);
+      //csvFileToArray(text);
+      //};
     }
+    //fileReader.readAsText(file);
+  };
+
+  const parseCSVFile = (file) => {
+    const reader = new FileReader();
+
+    reader.onload = (e) => {
+      const csvText = e.target.result;
+      const results = [];
+
+      csvText.split("\n").forEach((row) => {
+        const columns = row.split(",");
+        // Change the index to the column you want (0-based)
+        const specificColumn = columns[2]; // Replace '2' with the desired column index
+        results.push(specificColumn);
+        const specificColumn2 = columns[4]; // Replace '2' with the desired column index
+        results.push(specificColumn2);
+      });
+
+      console.log(results);
+    };
+
+    reader.readAsText(file);
   };
 
   const headerKeys = Object.keys(Object.assign({}, ...array));
