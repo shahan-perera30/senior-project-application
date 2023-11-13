@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import {
   FaDelicious,
   FaFilter,
-  FaHouseUser,
   FaRegClock,
   FaSignOutAlt,
 } from "react-icons/fa";
@@ -40,17 +39,12 @@ export default function Menu() {
             </Link>
           </li>
           <li>
-            <Link to="/profile">
-              <FaHouseUser />
-            </Link>
-          </li>
-          <li>
             <Link to="/clockIn">
               <FaRegClock />
             </Link>
           </li>
           <li>
-            <Link to="/logout">
+            <Link to="/LogoutButton">
               <FaSignOutAlt />
             </Link>
           </li>

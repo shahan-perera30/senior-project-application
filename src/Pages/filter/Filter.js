@@ -12,6 +12,15 @@ function Filter() {
     setFile(e.target.files[0]);
   };
 
+  const fs = require("fs");
+
+  function writeToFile(array, filename) {
+    fs.writeFile("./extracted.csv", array.join("/n"), (err) => {
+      if (err) throw err;
+      console.log("The file has been saved.");
+    });
+  }
+
   const csvFileToArray = (string) => {
     const csvHeader = string.slice(0, string.indexOf("\n")).split(",");
     const csvRows = string.slice(string.indexOf("\n") + 1).split("\n");
@@ -58,9 +67,20 @@ function Filter() {
       });
 
       console.log(results);
+      writeToFile(results, "extracted.csv");
     };
-
     reader.readAsText(file);
+  };
+
+  const handleDownload = () => {
+    const csvContent =
+      "data:text/csv;charset=utf-8," + array.map((e) => e.join(",")).join("\n");
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "extracted.csv");
+    document.body.appendChild(link);
+    link.click();
   };
 
   const headerKeys = Object.keys(Object.assign({}, ...array));
@@ -81,8 +101,10 @@ function Filter() {
             handleOnSubmit(e);
           }}
         >
-          IMPORT CSV
+          ORGANIZE CSV
         </button>
+
+        <button onClick={handleDownload}>DOWNLOAD CSV</button>
       </form>
 
       <br />

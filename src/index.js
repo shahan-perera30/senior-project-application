@@ -15,7 +15,9 @@ root.render(
     <Auth0Provider
       domain={domain}
       clientId={clientId}
-      redirectUri={window.location.orgin}
+      authorizationParams={{
+        redirect_uri: window.location.origin,
+      }}
     >
       <BrowserRouter>
         <App />
